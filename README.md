@@ -1,0 +1,2 @@
+# -Primeros-pasos-en-PHP
+Para afianzar los conceptos fundamentales de sintaxis, variables, operadores y ámbitos de PHP, vais a desarrollar una Prueba de Concepto (PoC) que demuestre la generación dinámica de contenido en el servidor y su posterior interacción en el cliente a través de bloques embebidos en JavaScript. 
