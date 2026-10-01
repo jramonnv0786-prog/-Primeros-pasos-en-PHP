@@ -1,11 +1,9 @@
 <?php
 // 1. Directivas de configuración
 //Activamos la visualización de errores en el navegador para depuración
-
  error_reporting(E_ALL);
  ini_set("display_startup_errors",1);
  ini_set('display_errors', 1);
- date_default_timezone_set('Europe/Madrid');
 
 
 // Configuración de hora local para la fecha dinámica
