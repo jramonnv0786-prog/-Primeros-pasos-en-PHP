@@ -5,11 +5,13 @@
  error_reporting(E_ALL);
  ini_set("display_startup_errors",1);
  ini_set('display_errors', 1);
+ date_default_timezone_set('Europe/Madrid');
+
 
 // Configuración de hora local para la fecha dinámica
  
-$fecha = date('d;m;Y');
-$hora = date('H:i:s');
+$fecha = date('d ; m ; Y');
+$hora = date('H : i : s');
  
 // 2. Definición de variables globales (nombre, apellidos, edadActual)
 
@@ -30,8 +32,7 @@ $edadDoble = 0;
 // Operadores aritméticos (edad10, edad20, edadDoble)
 // establecer los valores correctos
 function calcularEdadesFuturas() {
-
-    global $edad10, $edad20, $edadDoble, $edadActual;
+    global $edad10, $edad20, $edadDoble , $edadActual;
     $edad10 = $edadActual + 10;
     $edad20 = $edadActual + 20;
     $edadDoble = $edadActual * 2;
