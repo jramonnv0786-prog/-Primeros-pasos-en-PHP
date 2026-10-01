@@ -27,8 +27,8 @@ $edad20 = 0;
 $edadDoble = 0;
  
 // Esto es necesario?: Acceso al ámbito global mediante la palabra reservada 'global'
-    // Operadores aritméticos (edad10, edad20, edadDoble)
-    // establecer los valores correctos
+// Operadores aritméticos (edad10, edad20, edadDoble)
+// establecer los valores correctos
 function calcularEdadesFuturas() {
 
     global $edad10, $edad20, $edadDoble, $edadActual;
@@ -37,9 +37,11 @@ function calcularEdadesFuturas() {
     $edadDoble = $edadActual * 2;
 }
  // Ejecutamos la función para procesar los cálculos en el servidor
-
  
+    calcularEdadesFuturas();
+
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
