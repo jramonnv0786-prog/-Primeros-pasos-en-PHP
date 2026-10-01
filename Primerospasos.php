@@ -26,13 +26,18 @@ $edad10 = 0;
 $edad20 = 0;
 $edadDoble = 0;
  
-function calcularEdadesFuturas() {
-    // Esto es necesario?: Acceso al ámbito global mediante la palabra reservada 'global'
+// Esto es necesario?: Acceso al ámbito global mediante la palabra reservada 'global'
     // Operadores aritméticos (edad10, edad20, edadDoble)
     // establecer los valores correctos
+function calcularEdadesFuturas() {
+
+    global $edad10, $edad20, $edadDoble, $edadActual;
+    $edad10 = $edadActual + 10;
+    $edad20 = $edadActual + 20;
+    $edadDoble = $edadActual * 2;
 }
- 
-// Ejecutamos la función para procesar los cálculos en el servidor
+ // Ejecutamos la función para procesar los cálculos en el servidor
+
  
 ?>/
 <!DOCTYPE html>
