@@ -1,13 +1,19 @@
 <?php
 // 1. Directivas de configuración
  
- 
+ ini_set('display_errors', 1);
+
 // Configuración de hora local para la fecha dinámica
  
- 
+$fecha = date_default_timezone_set('Europe/Madrid');
+$hora = date('H:i:s');
  
 // 2. Definición de variables globales (nombre, apellidos, edadActual)
- 
+
+$nombre = "Soy Jose Ramón"; //Nombre del usuario
+$apellidos = "Neira Vega";   //Apellidos del usuario
+$edad = 25; // Edad actual del usuario
+
  
 // 3. Control de Ámbitos y Funciones PHP
 // Declaramos las variables fuera para inicializarlas en el ámbito global
@@ -69,7 +75,7 @@ function calcularEdadesFuturas() {
  
  
     <div class="box">
-        <p><strong>Presentación:</strong> Soy <?= htmlspecialchars($nombre . " " . $apellidos) ?>, y tengo <?= $edadActual ?> años.</p>
+        <p><strong>Presentación:</strong> Soy <?= htmlspecialchars($nombre . " " . $apellidos) ?>, y tengo <?= $edad ?> años.</p>
         
         <h3>Interactividad en el Cliente (Sin recarga de página):</h3>
         <button onclick="mostrarResultado('10')">Hacer pasar 10 años</button>
@@ -88,3 +94,4 @@ function calcularEdadesFuturas() {
  
 </body>
 </html>
+
