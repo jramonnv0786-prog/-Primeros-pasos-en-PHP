@@ -12,13 +12,16 @@ $hora = date('H:i:s');
 
 $nombre = "Soy Jose Ramón"; //Nombre del usuario
 $apellidos = "Neira Vega";   //Apellidos del usuario
-$edad = 25; // Edad actual del usuario
+$edadActual = 25; // Edad actual del usuario
 
  
 // 3. Control de Ámbitos y Funciones PHP
 // Declaramos las variables fuera para inicializarlas en el ámbito global
-//edad10, edad20, edadDoble, todas a 0 de inicio.﻿
- 
+//edad10, edad20, edadDoble, todas a 0 de inicio.
+
+ $edad10 = 0;
+ $edad20 = 0;
+$edadDoble = 0;
  
 function calcularEdadesFuturas() {
     // Esto es necesario?: Acceso al ámbito global mediante la palabra reservada 'global'
