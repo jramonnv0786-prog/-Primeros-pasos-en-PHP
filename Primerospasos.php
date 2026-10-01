@@ -13,7 +13,7 @@ $hora = date('H:i:s');
  
 // 2. Definición de variables globales (nombre, apellidos, edadActual)
 
-$nombre = "Soy Jose Ramón"; //Nombre del usuario
+$nombre = "Jose Ramón"; //Nombre del usuario
 $apellidos = "Neira Vega";   //Apellidos del usuario
 $edadActual = 25; // Edad actual del usuario
 
@@ -39,7 +39,7 @@ function calcularEdadesFuturas() {
  // Ejecutamos la función para procesar los cálculos en el servidor
 
  
-?>/
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
