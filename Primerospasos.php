@@ -32,12 +32,12 @@ $edadDoble = 0;
 function calcularEdadesFuturas() {
 
     global $edad10, $edad20, $edadDoble, $edadActual;
-    $edad10 = $edadActual + 10;
-    $edad20 = $edadActual + 20;
-    $edadDoble = $edadActual * 2;
+    $edadActual = $edad10 + 10;
+   $edadActual= $edad20 = + 20;
+   $edadActual= $edadDoble * 2;
 }
  // Ejecutamos la función para procesar los cálculos en el servidor
- 
+
     calcularEdadesFuturas();
 
 ?>
